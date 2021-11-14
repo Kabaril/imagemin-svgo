@@ -17,4 +17,4 @@ const imageminSvgo = options => async buffer => {
 	return Buffer.from(data);
 };
 
-exports.default = imageminSvgo;
+module.exports = imageminSvgo;

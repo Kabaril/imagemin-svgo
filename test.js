@@ -1,5 +1,5 @@
 const test = require('ava');
-const imageminSvgo = require('./index.js').default;
+const imageminSvgo = require('./index.js');
 
 test('optimize a SVG', async t => {
 	const data = (await imageminSvgo()('<svg><script></script></svg>')).toString();
