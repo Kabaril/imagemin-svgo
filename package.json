@@ -4,7 +4,7 @@
 	"description": "SVGO imagemin plugin",
 	"license": "MIT",
 	"repository": "imagemin/imagemin-svgo",
-	"type": "module",
+	"type": "commonjs",
 	"funding": {
 		"url": "https://github.com/sindresorhus/imagemin-svgo?sponsor=1"
 	},
@@ -13,6 +13,17 @@
 	},
 	"scripts": {
 		"test": "xo && ava"
+	},
+	"eslintConfig": {
+		"plugins": [
+			"unicorn"
+		]
+	},
+	"xo": {
+		"rules": {
+			"unicorn/prefer-module": 0,
+			"prefer-destructuring": 0
+		}
 	},
 	"files": [
 		"index.js"

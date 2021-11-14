@@ -1,6 +1,6 @@
-import {Buffer} from 'node:buffer';
-import isSvg from 'is-svg';
-import {optimize} from 'svgo';
+const Buffer = require('buffer').Buffer;
+const isSvg = require('is-svg');
+const optimize = require('svgo').optimize;
 
 const imageminSvgo = options => async buffer => {
 	options = {multipass: true, ...options};
@@ -17,4 +17,4 @@ const imageminSvgo = options => async buffer => {
 	return Buffer.from(data);
 };
 
-export default imageminSvgo;
+exports.default = imageminSvgo;
