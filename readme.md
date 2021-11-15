@@ -1,20 +1,16 @@
-# imagemin-svgo ![GitHub Actions Status](https://github.com/imagemin/imagemin-svgo/workflows/test/badge.svg?branch=master)
-
-> [SVGO](https://github.com/svg/svgo) imagemin plugin
+[SVGO](https://github.com/svg/svgo) imagemin plugin
 
 
-## Install
+## Warning
 
-```
-$ npm install imagemin-svgo
-```
+This repo is only for development purposes and not intended to be used in production enviroments.
 
 
 ## Usage
 
 ```js
-import imagemin from 'imagemin';
-import imageminSvgo from 'imagemin-svgo';
+const imagemin = require('imagemin');
+const imageminSvgo = require('imagemin-svgo');
 
 (async () => {
 	await imagemin(['images/*.svg'], {
