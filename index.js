@@ -1,6 +1,6 @@
-const Buffer = require('buffer').Buffer;
+const {Buffer} = require('buffer');
 const isSvg = require('is-svg');
-const optimize = require('svgo').optimize;
+const {optimize} = require('svgo');
 
 const imageminSvgo = options => async buffer => {
 	options = {multipass: true, ...options};
